@@ -1,0 +1,25 @@
+{
+    "name": "linex/base",
+    "description": "Base selection of modules & components for Linex CMS",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","linex","cms"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "vilderr",
+            "email": "admin@vilderr.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "kartik-v/yii2-icons": "@dev",
+        "kartik-v/yii2-dynagrid": "@dev",
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "kartik-v/yii2-field-range": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "linex\\base\\": ""
+        }
+    }
+}
