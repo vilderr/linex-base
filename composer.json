@@ -12,6 +12,7 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-bootstrap": "*",
         "kartik-v/yii2-icons": "@dev",
         "kartik-v/yii2-dynagrid": "@dev",
         "kartik-v/yii2-widget-datepicker": "@dev",
