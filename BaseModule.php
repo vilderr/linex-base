@@ -15,7 +15,7 @@ class BaseModule extends Module implements BootstrapInterface
     public $serverName = 'localhost';
     public $serverPort = 80;
 
-    public static function t($message, $category = 'Module', $params = [], $language = null)
+    public static function t($message, $params = [], $category = 'Base', $language = null)
     {
         return Yii::t('modules/base/' . $category, $message, $params, $language);
     }
@@ -27,7 +27,7 @@ class BaseModule extends Module implements BootstrapInterface
             'forceTranslation' => true,
             'basePath'         => '@vendor/linex/base/messages',
             'fileMap'          => [
-                'modules/base/Module' => 'base.php',
+                'modules/base/Base' => 'base.php',
             ],
         ];
     }

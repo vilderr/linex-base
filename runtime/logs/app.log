@@ -1,0 +1,808 @@
+2017-06-02 23:40:27 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'Username', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'Username', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/forms/LoginForm.php(47): linex\base\modules\user\Module::t('Username')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Model.php(511): linex\base\modules\user\models\forms\LoginForm->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/helpers/BaseHtml.php(1153): yii\base\Model->getAttributeLabel('username')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(288): yii\helpers\BaseHtml::activeLabel(Object(linex\base\modules\user\models\forms\LoginForm), 'username', Array)
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(207): yii\widgets\ActiveField->label()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\widgets\ActiveField->render()
+#9 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#14 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#15 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#20 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#22 {main}' in /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php:314
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError()
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(26): yii\widgets\ActiveField->__toString()
+#2 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): ::unknown()
+#3 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#6 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): linex\base\modules\dashboard\controllers\SignController->actionIn()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#13 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#14 {main}
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php:26
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php:34
+2017-06-02 23:40:27 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436027.0493
+    'REQUEST_TIME' => 1496436027
+]
+2017-06-02 23:40:27 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'ID', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'ID', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/User.php(96): linex\base\modules\user\Module::t('ID')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1552): linex\base\modules\user\models\User->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/panels/UserPanel.php(239): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(218): yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#12 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', '/Users/vilderr/...', 314, Array)
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(314): trigger_error('Exception (Inva...', 256)
+#14 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#15 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#20 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#21 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#22 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#25 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#26 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#28 {main}
+2017-06-02 23:40:27 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436027.0493
+    'REQUEST_TIME' => 1496436027
+]
+2017-06-02 23:40:30 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'Username', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'Username', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/forms/LoginForm.php(47): linex\base\modules\user\Module::t('Username')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Model.php(511): linex\base\modules\user\models\forms\LoginForm->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/helpers/BaseHtml.php(1153): yii\base\Model->getAttributeLabel('username')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(288): yii\helpers\BaseHtml::activeLabel(Object(linex\base\modules\user\models\forms\LoginForm), 'username', Array)
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(207): yii\widgets\ActiveField->label()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\widgets\ActiveField->render()
+#9 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#14 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#15 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#20 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#22 {main}' in /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php:314
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError()
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(26): yii\widgets\ActiveField->__toString()
+#2 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): ::unknown()
+#3 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#6 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): linex\base\modules\dashboard\controllers\SignController->actionIn()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#13 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#14 {main}
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php:26
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php:34
+2017-06-02 23:40:30 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436030.3314
+    'REQUEST_TIME' => 1496436030
+]
+2017-06-02 23:40:30 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'ID', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'ID', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/User.php(96): linex\base\modules\user\Module::t('ID')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1552): linex\base\modules\user\models\User->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/panels/UserPanel.php(239): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(218): yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#12 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', '/Users/vilderr/...', 314, Array)
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(314): trigger_error('Exception (Inva...', 256)
+#14 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#15 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#20 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#21 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#22 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#25 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#26 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#28 {main}
+2017-06-02 23:40:30 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436030.3314
+    'REQUEST_TIME' => 1496436030
+]
+2017-06-02 23:40:35 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'Username', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'Username', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/forms/LoginForm.php(47): linex\base\modules\user\Module::t('Username')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Model.php(511): linex\base\modules\user\models\forms\LoginForm->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/helpers/BaseHtml.php(1153): yii\base\Model->getAttributeLabel('username')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(288): yii\helpers\BaseHtml::activeLabel(Object(linex\base\modules\user\models\forms\LoginForm), 'username', Array)
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(207): yii\widgets\ActiveField->label()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\widgets\ActiveField->render()
+#9 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#14 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#15 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#20 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#22 {main}' in /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php:314
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError()
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(26): yii\widgets\ActiveField->__toString()
+#2 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): ::unknown()
+#3 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#6 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): linex\base\modules\dashboard\controllers\SignController->actionIn()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#13 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#14 {main}
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php:26
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php:34
+2017-06-02 23:40:35 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436035.2965
+    'REQUEST_TIME' => 1496436035
+]
+2017-06-02 23:40:35 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'ID', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'ID', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/User.php(96): linex\base\modules\user\Module::t('ID')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1552): linex\base\modules\user\models\User->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/panels/UserPanel.php(239): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(218): yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#12 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', '/Users/vilderr/...', 314, Array)
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(314): trigger_error('Exception (Inva...', 256)
+#14 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#15 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#20 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#21 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#22 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#25 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#26 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#28 {main}
+2017-06-02 23:40:35 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436035.2965
+    'REQUEST_TIME' => 1496436035
+]
+2017-06-02 23:40:36 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'Username', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'Username', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/forms/LoginForm.php(47): linex\base\modules\user\Module::t('Username')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Model.php(511): linex\base\modules\user\models\forms\LoginForm->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/helpers/BaseHtml.php(1153): yii\base\Model->getAttributeLabel('username')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(288): yii\helpers\BaseHtml::activeLabel(Object(linex\base\modules\user\models\forms\LoginForm), 'username', Array)
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(207): yii\widgets\ActiveField->label()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\widgets\ActiveField->render()
+#9 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#14 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#15 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#20 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#22 {main}' in /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php:314
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError()
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(26): yii\widgets\ActiveField->__toString()
+#2 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): ::unknown()
+#3 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#6 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): linex\base\modules\dashboard\controllers\SignController->actionIn()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#12 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#13 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#14 {main}
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php:26
+    in /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php:34
+2017-06-02 23:40:36 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436036.317
+    'REQUEST_TIME' => 1496436036
+]
+2017-06-02 23:40:36 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'modules/user/module'.' 
+
+in /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php:200
+
+Stack trace:
+#0 /Users/vilderr/www/linex/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('modules/user/mo...')
+#1 /Users/vilderr/www/linex/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('modules/user/mo...', 'ID', Array, 'ru-RU')
+#2 /Users/vilderr/www/linex/vendor/linex/base/modules/user/Module.php(50): yii\BaseYii::t('modules/user/mo...', 'ID', Array, NULL)
+#3 /Users/vilderr/www/linex/vendor/linex/base/modules/user/models/User.php(96): linex\base\modules\user\Module::t('ID')
+#4 /Users/vilderr/www/linex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1552): linex\base\modules\user\models\User->attributeLabels()
+#5 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/panels/UserPanel.php(239): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#6 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#7 /Users/vilderr/www/linex/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#8 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#9 /Users/vilderr/www/linex/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#10 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#11 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(218): yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#12 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', '/Users/vilderr/...', 314, Array)
+#13 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/ErrorHandler.php(314): trigger_error('Exception (Inva...', 256)
+#14 /Users/vilderr/www/linex/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#15 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/views/sign/in.php(26): yii\widgets\ActiveField->__toString()
+#16 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(330): require('/Users/vilderr/...')
+#17 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/vilderr/...', Array)
+#18 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/vilderr/...', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#19 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('in', Array, Object(linex\base\modules\dashboard\controllers\SignController))
+#20 /Users/vilderr/www/linex/vendor/linex/base/modules/dashboard/controllers/SignController.php(34): yii\base\Controller->render('in', Array)
+#21 [internal function]: linex\base\modules\dashboard\controllers\SignController->actionIn()
+#22 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('in', Array)
+#25 /Users/vilderr/www/linex/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/sign/...', Array)
+#26 /Users/vilderr/www/linex/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/vilderr/www/linex/web/index.php(14): yii\base\Application->run()
+#28 {main}
+2017-06-02 23:40:36 [127.0.0.1][1][9undt1rs5fv482u3811mel7vn4][info][application] $_COOKIE = [
+    '_csrf' => '984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯U{Ë6Öé\'¦ÛÄgBv˜Ž½{L¥©zoe*)1zB\";}'
+    'PHPSESSID' => '9undt1rs5fv482u3811mel7vn4'
+    '_identity' => '78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'unqrqe'
+    '__captcha/site/captchacount' => 1
+    'db-config' => [
+        'db_host' => 'localhost'
+        'db_name' => 'linex'
+        'username' => 'vilderr'
+        'password' => 'Kolopatka!!2'
+        'enableSchemaCache' => true
+        'schemaCacheDuration' => 86400
+        'schemaCache' => 'cache'
+        'connectionOk' => true
+    ]
+    'install_demo_data' => false
+    '__returnUrl' => '/dashboard'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vilderr'
+    'HOME' => '/Users/vilderr'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/Users/vilderr/www/linex/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/dashboard/sign/in'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/Users/vilderr/www/linex/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56267'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'linex.local'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'linex.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=984ef6ed6f5b63a7fdbed8ce18e59b18d34e214b086f7aac5a2451929d519d9aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AFU%7B%CB6%D6%E9%27%A6%DB%C4gBv%98%8E%BD%7B%01L%A5%A9zo%04%08e%2A%291zB%22%3B%7D; PHPSESSID=9undt1rs5fv482u3811mel7vn4; _identity=78bbfc521a16b7609ad474deaf48fd264c9e2261c33d9063312fbe3d141f649ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496436036.317
+    'REQUEST_TIME' => 1496436036
+]
